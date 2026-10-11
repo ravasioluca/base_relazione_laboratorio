@@ -1,0 +1,56 @@
+\usepackage[italian]{babel}
+\usepackage[a4paper, margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, physics, amsfonts}
+\usepackage{chngcntr}
+\usepackage[parfill]{parskip}
+\usepackage{titlesec}
+\usepackage{mdframed}
+\usepackage{url}
+\usepackage{csquotes}
+\usepackage{circuitikz}
+\usepackage[version=4]{mhchem}
+\usepackage[backend=bibtex]{biblatex}
+
+\usetikzlibrary{external}
+\tikzexternalize
+
+\mdfsetup{
+  skipabove=7pt,
+  skipbelow=7pt
+}
+
+\usepackage{float}
+
+\sloppy
+\usepackage{microtype}
+
+\addbibresource{references.bib}
+\setlength\bibnamesep{1.0\baselineskip}
+
+\newif\ifdarkmode
+
+\darkmodefalse
+
+\ifdarkmode
+  \usepackage{tikz}
+  \pagecolor{black}
+  \color{white}
+  \usepackage[colorlinks=true, urlcolor=orange, linkcolor=orange, citecolor=orange]{hyperref}
+\else
+  %\usepackage{xcolor}
+  %\definecolor{darkblue}{rgb}{0.0, 0.0, 0.8}
+  %\usepackage[colorlinks=true, urlcolor=darkblue, linkcolor=darkblue, citecolor=darkblue]{hyperref}
+  \usepackage{hyperref}
+\fi
+
+%\usepackage[italian]{cleveref}
+
+%\numberwithin{equation}{section}
+%\numberwithin{figure}{section}
+
+%\titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+
+%\titleformat{\subsection}{\normalfont\large\bfseries}{}{0pt}{}
+
+\newcommand{\diff}{\mathrm{d}}
